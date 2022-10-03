@@ -1,0 +1,41 @@
+/******************************************************************************
+ Program untuk menghitung rata-rata pengeluaran harian dalam rentang seminggu
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int senin, selasa, rabu, kamis, jumat, sabtu, minggu, total, rerata;
+    cout<<"Masukkan Pengeluaranmu pada Hari,"<<endl;
+    cout<<"Senin = Rp. ";
+    cin>>senin;
+    cout<<"Selasa = Rp. ";
+    cin>>selasa;
+    cout<<"Rabu = Rp. ";
+    cin>>rabu;
+    cout<<"Kamis = Rp. ";
+    cin>>kamis;
+    cout<<"Jumat = Rp. ";
+    cin>>jumat;
+    cout<<"Sabtu = Rp. ";
+    cin>>sabtu;
+    cout<<"Minggu = Rp. ";
+    cin>>minggu;
+    
+    total=senin+selasa+rabu+kamis+jumat+sabtu+minggu;
+    rerata=total/7;
+    
+    cout<<"Rata-rata pengeluaranmu  minggu ini adalah Rp. "<<rerata<<endl;
+    
+    if(rerata>30000){
+        cout<<"Minggu besok lebih hemat yaa :D";
+    }
+    else if(rerata<=30000){
+        cout<<"Yeayy tetap dipertahankan yaa ;)";
+    }
+
+    return 0;
+}
